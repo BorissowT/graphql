@@ -60,3 +60,13 @@ query{
     }
   }
 }
+
+search query:
+
+query {
+  links(search:"jonatas"){
+    id
+    url
+    description
+  }
+}
