@@ -70,3 +70,13 @@ query {
     description
   }
 }
+
+query with pagination: 
+
+query {
+  links(first:2, skip:1){
+    id
+    url
+    description
+  }
+}
