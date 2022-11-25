@@ -6,11 +6,11 @@ mutation {
   }
 }
 
-request header :
-
+request header to make requests:
 {
   "AUTHORIZATION": "JWT <token>"
 }
+
 
 create a link:
 
