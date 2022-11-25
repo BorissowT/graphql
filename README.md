@@ -80,3 +80,39 @@ query {
     description
   }
 }
+
+
+RELY:
+
+query with a filter:
+
+query {
+  relayLinks(last: 2){
+    edges{
+      node{
+        id
+    		url
+    		description          	   
+      }
+    }
+    pageInfo{
+      startCursor
+      endCursor
+    }
+  }
+}
+
+mutation:
+
+mutation{
+  relayCreateLink(input: {
+    url: "deployeveryday.com",
+    description: "authorsBlog"}
+  ) {
+ 		link{
+      id
+      url
+      description
+    }	
+  }
+}
